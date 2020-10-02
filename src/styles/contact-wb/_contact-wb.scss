@@ -1,0 +1,142 @@
+.contact-wb {
+  position: relative;
+  margin-top: 30px;
+  padding-bottom: 90px;
+
+  @media (max-width: 900px) {
+    margin-top: 11.5px;
+    margin-bottom: 122px;
+    padding-bottom: 0;
+  }
+
+  &__title-wrapper {
+    margin-bottom: 101px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 75px;
+    }
+
+    // @media (max-width: 500px) {
+    //   max-width: 270px;
+    //   padding: 23px 35px 0;
+    // }
+  }
+}
+
+.contact-block-wb {
+  &__item {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+}
+
+.contact-box-wb {
+  position: relative;
+  display: flex;
+  height: 111px;
+  padding-left: 161px;
+
+  @media (max-width: 900px) {
+    height: auto;
+    justify-content: center;
+    padding-left: 0;
+    padding-top: 125px;
+  }
+
+  @media (max-width: 500px) {
+    padding-top: 95px;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    font-size: 27.8px;
+    line-height: 33px;
+
+    @media (max-width: 900px) {
+      // justify-content: center;
+      align-items: center;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 22px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 111px;
+    width: 111px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (max-width: 900px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 500px) {
+      height: 81px;
+      width: 81px;
+    }
+  }
+
+  &:first-child {
+    &::before {
+      background-image: url("../../src/images/contact-wb/picto-telephon.svg");
+    }
+  }
+
+  &:nth-child(2) {
+    &::before {
+      background-image: url("../../src/images/contact-wb/picto-adress.svg");
+    }
+  }
+
+  &:nth-child(3) {
+    &::before {
+      background-image: url("../../src/images/contact-wb/picto-email.svg");
+    }
+  }
+
+  &:nth-child(4) {
+    &::before {
+      background-image: url("../../src/images/contact-wb/picto-internet.svg");
+    }
+  }
+}
+
+.contact-box-wb:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 80px;
+  }
+}
+
+.contact-picture-wb {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  z-index: -1;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  img {
+    @media (max-width: 1700px) {
+      width: 55vw;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.resources-block {
+  margin-bottom: 212px;
+
+  &__show-more-button {
+    display: none;
+    height: 52px;
+    width: 100%;
+    margin-top: 107.5px;
+    color: #fff;
+    background: $dark-green-color;
+    padding: 12.8px 15px 11.2px;
+    font-size: 23px;
+    line-height: 22px;
+    transition: 0.3s;
+
+    @media (max-width: 500px) {
+      display: block;
+    }
+
+    @media (max-width: 400px) {
+      width: 100vw;
+      margin: 107.5px -18.5px 0;
+    }
+
+    &--hidden {
+      display: none !important;
+    }
+  }
+
+  &__show-more-button:hover {
+    background: $light-brown-color;
+  }
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 85px 104px;
+
+  @media (max-width: 1100px) {
+    gap: 45px;
+  }
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 85px;
+  }
+
+  @media (max-width: 650px) {
+    gap: 25px;
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    gap: 86.6px;
+  }
+}
+
+.resources-item {
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+
+  &--active {
+    display: block;
+  }
+
+  &__picture {
+    position: relative;
+    height: 405px;
+    width: 100%;
+    margin-bottom: 27.4px;
+    padding: 25px 18.5px;
+    background: url("../../src/images/resources/resources-item-ornament.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @media (max-width: 650px) {
+      height: 365px;
+    }
+
+    @media (max-width: 500px) {
+      height: 465px;
+    }
+
+    @media (max-width: 350px) {
+      height: 390px;
+    }
+
+    img {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__block {
+    padding: 0 34px;
+  }
+
+  &__title {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28.4px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 500px) {
+      font-size: 26px;
+      line-height: 33.5px;
+    }
+  }
+}

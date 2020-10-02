@@ -1,0 +1,252 @@
+.players {
+  position: relative;
+
+  &__wrapper {
+    padding-bottom: 65px;
+
+    @media (max-width: 800px) {
+      padding-top: 500px;
+    }
+
+    @media (max-width: 700px) {
+      padding-top: 400px;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 320px;
+    }
+
+    @media (max-width: 600px) {
+      padding-top: 400px;
+    }
+  }
+
+  &__title-wrapper {
+    margin-bottom: 70px;
+  }
+}
+
+.players-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+
+  &__picture {
+    position: absolute;
+    z-index: -1;
+
+    img.players-background__image--desktop {
+      @media (max-width: 800px) {
+        display: none;
+      }
+    }
+
+    img.players-background__image--mobile {
+      display: none;
+
+      @media (max-width: 800px) {
+        display: block;
+      }
+    }
+  }
+
+  &__picture:first-child {
+    top: 119px;
+    right: 0;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &__picture:nth-child(2) {
+    top: 335px;
+    right: 20px;
+
+    @media (max-width: 1500px) {
+      width: 48%;
+      right: 0;
+    }
+
+    @media (max-width: 1200px) {
+      width: 55%;
+      right: -62px;
+    }
+
+    @media (max-width: 800px) {
+      top: 133px;
+      right: 50%;
+      transform: translateX(50%);
+    }
+
+    @media (max-width: 500px) {
+      height: 500px;
+      width: 100%;
+      top: 75px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__picture:nth-child(3) {
+    bottom: -6px;
+    left: 295px;
+
+    @media (max-width: 1250px) {
+      left: 10%;
+    }
+
+    @media (max-width: 800px) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    @media (max-width: 500px) {
+      left: auto;
+      right: 0;
+      transform: none;
+    }
+  }
+}
+
+.players-fact {
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.players-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &__item {
+    width: 47.9%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  h5 {
+    color: $red-color;
+    font-size: 21px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (max-width: 800px) {
+      margin-bottom: 37px;
+    }
+  }
+}
+
+.players-block:first-child {
+  position: relative;
+  padding: 72px 0 50px;
+  margin-bottom: 60px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+    padding: 56px 0 80px;
+  }
+
+  p {
+    color: #fff;
+    font-weight: 600;
+  }
+
+  p:not(:last-child) {
+    overflow: hidden;
+    margin-bottom: 60px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 54px;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    transform: translateX(-50%);
+    height: 100%;
+    width: calc(100vw + 2px);
+    background: #a3bd49;
+    z-index: -2;
+  }
+
+  .players-fact {
+    @media (max-width: 800px) {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.players-block:last-child {
+  .players-block__item:last-child {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 200px;
+
+    @media (max-width: 1500px) {
+      padding-top: 0;
+    }
+
+    @media (max-width: 800px) {
+      text-transform: none;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
+
+    h6 {
+      margin-bottom: 14px;
+      font-size: 14px;
+      font-weight: normal;
+
+      @media (max-width: 500px) {
+        font-size: 18px;
+      }
+    }
+
+    ul {
+      li {
+        line-height: 28px;
+      }
+    }
+
+    ul:nth-child(2) {
+      margin-bottom: 40px;
+      padding-left: 19px;
+      list-style-type: disc;
+      // .players-block-list__item {
+      //   span {
+      //     font-size: 18px;
+      //     // margin: -8px;
+      //   }
+      // }
+    }
+  }
+
+  p:first-child {
+    margin-bottom: 50px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .players-fact {
+    @media (max-width: 800px) {
+      margin-bottom: 25px;
+    }
+  }
+}

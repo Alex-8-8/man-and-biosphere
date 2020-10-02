@@ -1,0 +1,15 @@
+.resources-picture-section {
+  position: relative;
+  margin-bottom: 102px;
+
+  &__title-wrapper {
+    position: absolute;
+    top: 60.7px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 500px) {
+      top: 44.6px;
+    }
+  }
+}

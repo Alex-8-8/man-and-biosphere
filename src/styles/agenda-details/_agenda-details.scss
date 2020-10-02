@@ -1,0 +1,265 @@
+.agenda-details {
+  margin-bottom: 25px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__go-back-link {
+    position: absolute;
+    top: 34px;
+    left: -121px;
+
+    @media (max-width: 1350px) {
+      display: none;
+    }
+  }
+}
+
+.agenda-details-main-picture {
+  height: 707px;
+  width: 100%;
+  margin-bottom: 77px;
+
+  @media (max-width: 1100px) {
+    height: 600px;
+  }
+
+  @media (max-width: 800px) {
+    height: 450px;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width: 500px) {
+    height: 246px;
+    width: 100vw;
+    margin: 0 -18.5px 31px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.agenda-details-title-block {
+  margin-bottom: 68px;
+  font-family: "Bebas Neue", cursive;
+
+  @media (max-width: 800px) {
+    margin-bottom: 52px;
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    color: $red-color;
+    font-size: 53px;
+    line-height: 50.8px;
+    font-weight: 400;
+  }
+
+  h5 {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 34.8px;
+    text-transform: uppercase;
+  }
+
+  h5:first-child {
+    margin-bottom: 10px;
+  }
+
+  &__line-break {
+    display: block;
+  }
+}
+
+.agenda-details-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.agenda-details-block-item {
+  width: 47.7%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  h4 {
+    margin-bottom: 10.5px;
+    color: $red-color;
+    font-size: 24px;
+    line-height: 24.8px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__date-time-box {
+    margin-bottom: 46px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+}
+
+.agenda-details-block-item:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.agenda-details-block-item:last-child {
+  @media (max-width: 800px) {
+    margin-bottom: 0;
+  }
+}
+
+.agenda-details-block-item:first-child {
+  @media (max-width: 800px) {
+    margin-bottom: 120px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 26px;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 32px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.agenda-details-block-item-box {
+  font-size: 24px;
+
+  h4 {
+    @media (max-width: 500px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__address {
+    line-height: 36px;
+    display: block;
+
+    @media (max-width: 500px) {
+      margin-top: 22px;
+      font-size: 23px;
+      line-height: 26px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__zip,
+  &__city {
+    text-transform: uppercase;
+  }
+
+  &__price {
+    line-height: 40px;
+
+    @media (max-width: 500px) {
+      margin-top: 3px;
+    }
+  }
+
+  &__contacts {
+    line-height: 36px;
+
+    @media (max-width: 500px) {
+      margin-top: 11px;
+      font-size: 22px;
+      line-height: 29px;
+    }
+
+    @media (max-width: 370px) {
+      font-size: 18px;
+    }
+
+    span {
+      font-weight: 600;
+
+      @media (max-width: 500px) {
+        display: block;
+      }
+    }
+  }
+
+  &__contacts:not(:last-child) {
+    margin-bottom: 18px;
+  }
+
+  &__organisator-name {
+    line-height: 30.8px;
+
+    @media (max-width: 500px) {
+      margin-top: 9px;
+    }
+  }
+}
+
+.agenda-details-block-item-box:not(:last-child) {
+  margin-bottom: 32px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 70px;
+  }
+}
+
+.agenda-details-block-socials-box {
+  display: flex;
+  margin-top: 24px;
+
+  &__link {
+    height: 30px;
+
+    svg {
+      height: 100%;
+
+      path {
+        transition: 0.3s;
+      }
+    }
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 19px;
+  }
+
+  &__link:hover path {
+    fill: $red-color;
+  }
+}
+
+.agenda-details-block-video {
+  height: 425px;
+  width: 100%;
+  margin-top: 21px;
+
+  @media (max-width: 500px) {
+    height: 310px;
+    width: 100vw;
+    margin: 14px -20px 0;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+  }
+}

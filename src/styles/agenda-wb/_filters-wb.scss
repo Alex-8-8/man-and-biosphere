@@ -1,0 +1,222 @@
+.filters-wb {
+  margin: 50px 0 126.6px;
+
+  @media (max-width: 500px) {
+    margin: 77px 0 125px;
+  }
+}
+
+.filters-form-wb {
+  display: flex;
+
+  @media (max-width: 1150px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.filters-form-item-wb {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 11px;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.5px;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+  input {
+    width: 430px;
+    padding: 0 18px 3px 31px;
+    border: 2px solid #000;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.5px;
+
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    position: relative;
+    margin-top: auto;
+    border: 2px solid #000;
+    color: #fff;
+    background: #000;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    padding: 2px 53px 5.5px 16.5px;
+    transition: 0.3s;
+
+    svg {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  button:hover svg line {
+    stroke: #000;
+  }
+
+  .ui-selectmenu-button.ui-button {
+    width: 171.5px;
+
+    @media (max-width: 1150px) {
+      width: 100%;
+    }
+  }
+
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-bottom,
+  .ui-corner-right,
+  .ui-corner-br {
+    border-radius: 0;
+  }
+
+  .ui-state-default a,
+  .ui-state-default a:link,
+  .ui-state-default a:visited,
+  a.ui-button,
+  a:link.ui-button,
+  a:visited.ui-button,
+  .ui-button {
+    color: #000;
+    background: #fff;
+    border: 2px solid #000;
+  }
+
+  .ui-button {
+    height: 38px;
+    margin: 0;
+    padding: 1.5px 19px 5.5px 9.3px;
+    font-size: 23px;
+    line-height: 27.5px;
+    outline: none;
+  }
+
+  .ui-button .ui-icon,
+  .ui-state-active .ui-icon,
+  .ui-button:active .ui-icon {
+    background-image: url("../../src/images/agenda-wb/black-select-arrow.svg");
+  }
+
+  .ui-icon-triangle-1-s {
+    background-position: initial;
+    background-size: 80%;
+    transform: translateY(13px);
+  }
+}
+
+.filters-form-item-wb:first-child {
+  @media (max-width: 1150px) {
+    width: 100%;
+    margin-bottom: 43px;
+  }
+}
+
+.filters-form-item-wb:not(:last-child) {
+  margin-right: 49px;
+
+  @media (max-width: 1150px) {
+    margin-right: 0;
+  }
+}
+
+.filters-form-item-wb:nth-child(2),
+.filters-form-item-wb:nth-child(3) {
+  @media (max-width: 1150px) {
+    width: 48%;
+  }
+
+  // @media (max-width: 500px) {
+  //   width: 210px;
+  // }
+}
+
+.filters-form-item-wb:nth-child(2) {
+  @media (max-width: 1150px) {
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: 500px) {
+    width: 210px;
+  }
+}
+
+.filters-form-item-wb:nth-child(3) {
+  @media (max-width: 1150px) {
+    margin-bottom: 68px;
+  }
+
+  @media (max-width: 500px) {
+    width: 210px;
+  }
+}
+
+.filters-form-item-wb:last-child {
+  margin-left: auto;
+
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    width: 180px;
+    margin-left: 0;
+  }
+}
+
+.ui-selectmenu-menu .ui-menu {
+  padding-bottom: 0;
+}
+
+.body-wb {
+
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active,
+  a.ui-button:active,
+  // .ui-button:active,
+  .ui-button.ui-state-active:hover {
+    border: none;
+    background: #000;
+  }
+
+  .ui-menu .ui-state-focus,
+  .ui-menu .ui-state-active {
+    margin: 0;
+  }
+
+  .ui-widget {
+    font-family: inherit;
+    font-size: 23px;
+    line-height: 27.6px;
+  }
+
+  .ui-menu .ui-menu-item-wrapper {
+    position: relative;
+    padding: 3px 1em 3px 0.4em;
+  }
+
+}

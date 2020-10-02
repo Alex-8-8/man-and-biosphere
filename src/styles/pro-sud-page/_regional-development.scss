@@ -1,0 +1,133 @@
+.regional-development {
+  margin-bottom: 144px;
+
+  @media (max-width: 125px) {
+    margin-bottom: 125px;
+  }
+
+  &__title-wrapper {
+    margin-bottom: 80px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 55px;
+    }
+  }
+}
+
+.regional-development-fact {
+  margin-bottom: 80px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+}
+
+.regional-development-subtitle-block {
+  margin-bottom: 55px;
+}
+
+.regional-development-block {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    width: 48%;
+
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  &__item:first-child {
+    @media (max-width: 800px) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    position: absolute;
+    top: -60px;
+    right: -480px;
+
+    @media (max-width: 1600px) {
+      right: -280px;
+    }
+
+    @media (max-width: 1350px) {
+      right: -150px;
+    }
+
+    @media (max-width: 1100px) {
+      height: 60%;
+      top: 60px;
+      right: -50px;
+    }
+
+    @media (max-width: 950px) {
+      height: 40%;
+      top: 260px;
+    }
+
+    @media (max-width: 800px) {
+      position: static;
+      width: 50%;
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 500px) {
+      width: 88%;
+    }
+
+    img {
+      @media (max-width: 1100px) {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  h4 {
+    margin-bottom: 27px;
+    color: $red-color;
+    font-size: 24px;
+    text-transform: uppercase;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 32px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 27px;
+    }
+  }
+}
+
+.regional-development-additional-info {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+
+  @media (max-width: 1600px) {
+    right: auto;
+    left: 100px;
+  }
+
+  @media (max-width: 1350px) {
+    left: 0;
+  }
+
+  @media (max-width: 800px) {
+    position: static;
+  }
+}

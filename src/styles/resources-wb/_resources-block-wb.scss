@@ -1,0 +1,136 @@
+.resources-block-wb {
+  margin-bottom: 237px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 111px;
+  }
+
+  button {
+    display: none;
+    height: 52px;
+    width: 100vw;
+    margin: 3px -22.5px 0;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    background: #000;
+    border: 2px solid #000;
+    color: #fff;
+    transition: 0.3s;
+
+    @media (max-width: 500px) {
+      display: block;
+    }
+  }
+
+  button:hover {
+    background: #fff;
+    color: #000;
+  }
+
+  .resources-block-wb__show-more-button--hidden {
+    display: none;
+  }
+}
+
+.resources-grid-wb {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.resources-item-wb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 131px;
+  width: calc(25% - 43.6px);
+  border: 2px solid #000;
+  transition: 0.3s;
+
+  @media (max-width: 1150px) {
+    width: calc(25% - 15px);
+  }
+
+  @media (max-width: 1000px) {
+    width: calc(33% - 15px);
+  }
+
+  @media (max-width: 750px) {
+    width: calc(50% - 15px);
+  }
+
+  @media (max-width: 500px) {
+    display: none;
+    width: 100%;
+  }
+
+  &--active {
+    display: flex;
+  }
+
+  h5 {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 27.6px;
+    text-align: center;
+    text-transform: uppercase;
+
+    @media (max-width: 1300px) {
+      width: 95%;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+}
+
+.resources-item-wb:hover {
+  background: #000;
+  color: #fff;
+}
+
+.resources-item-wb:not(:nth-child(4n)):not(:last-child) {
+  margin-right: 43.6px;
+  margin-bottom: 48.2px;
+
+  @media (max-width: 1150px) {
+    margin: 0 15px 15px 0;
+  }
+
+  @media (max-width: 1000px) {
+    margin: 0;
+  }
+}
+
+.resources-item-wb:not(:nth-child(3n)):not(:last-child) {
+  @media (max-width: 1000px) {
+    margin: 0 15px 15px 0;
+  }
+
+  @media (max-width: 750px) {
+    margin: 0;
+  }
+}
+
+.resources-item-wb:not(:nth-child(2n)):not(:last-child) {
+  @media (max-width: 750px) {
+    margin: 0 15px 15px 0;
+  }
+
+  @media (max-width: 500px) {
+    margin: 0;
+  }
+}
+
+.resources-block-wb .resources-grid-wb .resources-item-wb:not(:last-child) {
+  @media (max-width: 500px) {
+    margin-bottom: 29.5px;
+  }
+}

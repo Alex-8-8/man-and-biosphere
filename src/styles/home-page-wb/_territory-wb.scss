@@ -1,0 +1,60 @@
+.territory-wb {
+  margin-bottom: 211px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 139px;
+  }
+
+  &__title-wrapper {
+    margin-bottom: 86px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.territory-fact-wb {
+  margin-bottom: 96px;
+
+  h4 {
+    font-weight: 700;
+  }
+
+  @media (max-width: 1000px) {
+    margin-bottom: 22.5px;
+  }
+}
+
+.territory-block-wb {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.territory-block-content-wb {
+  width: 48.45%;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  p {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 40px;
+
+    @media (max-width: 1000px) {
+      line-height: 32px;
+    }
+  }
+}
+
+.territory-block-content-wb:not(:last-child) {
+  @media (max-width: 1000px) {
+    margin-bottom: 37.5px;
+  }
+}

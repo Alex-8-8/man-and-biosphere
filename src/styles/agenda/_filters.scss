@@ -1,0 +1,197 @@
+.filters {
+  margin: 56.5px 0 70.5px;
+
+  @media (max-width: 500px) {
+    margin: 33px 0 58px;
+  }
+}
+
+.filters-form {
+  display: flex;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 500px) {
+    flex-wrap: initial;
+    flex-direction: column;
+  }
+}
+
+.filters-form-item {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 6.5px;
+    color: $dark-green-color;
+    font-size: 17px;
+    font-family: "Bebas Neue", cursive;
+    text-transform: uppercase;
+    line-height: 20.4px;
+  }
+
+  input {
+    width: 277px;
+    padding: 3px 14.5px 3px 8px;
+    border: 1px solid $dark-green-color;
+    color: $dark-green-color;
+
+    @media (max-width: 900px) {
+      width: 48%;
+    }
+
+    @media (max-width: 500px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    position: relative;
+    margin-top: auto;
+    border: 1px solid $red-color;
+    color: $red-color;
+    font-family: "Segoe UI", sans-serif;
+    padding: 3px 40px 3px 11px;
+    transition: 0.3s;
+
+    svg {
+      position: absolute;
+      top: 50%;
+      right: 8px;
+      transform: translateY(-50%);
+
+      line {
+        stroke: $red-color;
+      }
+    }
+  }
+
+  input,
+  button {
+    height: 25px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  button:hover {
+    background: $red-color;
+    color: #fff;
+  }
+
+  button:hover svg line {
+    stroke: #fff;
+  }
+
+  .ui-selectmenu-button.ui-button {
+    width: 171.5px;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  .ui-corner-all,
+  .ui-corner-top,
+  .ui-corner-bottom,
+  .ui-corner-right,
+  .ui-corner-br {
+    border-radius: 0;
+  }
+
+  .ui-state-default a,
+  .ui-state-default a:link,
+  .ui-state-default a:visited,
+  a.ui-button,
+  a:link.ui-button,
+  a:visited.ui-button,
+  .ui-button {
+    color: $dark-green-color;
+    background: #fff;
+    border: 1px solid $dark-green-color;
+  }
+
+  .ui-button {
+    height: 25px;
+    margin: 0;
+    padding: 3px 10px 3px 6px;
+    font-size: 14px;
+    line-height: 16.8px;
+    outline: none;
+  }
+
+  .ui-button .ui-icon,
+  .ui-state-active .ui-icon,
+  .ui-button:active .ui-icon {
+    background-image: url("../../src/images/agenda/green-arrow.svg");
+  }
+
+  .ui-icon-triangle-1-s {
+    background-position: 50% 80%;
+    background-size: 80%;
+  }
+}
+
+.ui-selectmenu-menu .ui-menu {
+  padding-bottom: 0;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.ui-button.ui-state-active:hover {
+  border: none;
+  background: $dark-green-color;
+}
+
+.ui-menu .ui-state-focus,
+.ui-menu .ui-state-active {
+  margin: 0;
+}
+
+.ui-widget {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+
+.filters-form-item:first-child {
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.filters-form-item:not(:last-child) {
+  margin-right: 32px;
+
+  @media (max-width: 900px) {
+    margin-right: 0;
+    margin-bottom: 27.2px;
+  }
+}
+
+.filters-form-item:nth-child(2),
+.filters-form-item:nth-child(3) {
+  @media (max-width: 900px) {
+    width: 48%;
+  }
+
+  @media (max-width: 500px) {
+    width: 210px;
+  }
+}
+
+.filters-form-item:last-child {
+  margin-left: auto;
+
+  @media (max-width: 900px) {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  @media (max-width: 500px) {
+    width: 136px;
+  }
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Man and biosphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="styles/main.scss">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+</head>
+
+<body>
+  <div class="mobile-menu-wb">
+    <div class="mobile-menu-wb__wrapper">
+      <button class="mobile-menu-wb__button">
+        <img src="images/home-page-wb/cross-wb.svg" alt="cross" class="mobile-menu-wb__cross">
+      </button>
+      <nav class="mobile-navigation-wb">
+        <ul class="mobile-navigation-list-wb">
+          <li class="mobile-navigation-list-wb__item">
+            <a href="main-wb.html" class="mobile-navigation-list-wb__link">
+              Home/Notre Biosphère
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="pro-sud-wb.html" class="mobile-navigation-list-wb__link">
+              Pro-sud
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="agenda-wb.html" class="mobile-navigation-list-wb__link mobile-navigation-list-wb__link--active">
+              Agenda
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="projects-wb.html" class="mobile-navigation-list-wb__link">
+              Projects
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="resources-wb.html" class="mobile-navigation-list-wb__link">
+              Ressources
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="our-region-wb.html" class="mobile-navigation-list-wb__link">
+              Découvrir Notre Région
+            </a>
+          </li>
+          <li class="mobile-navigation-list-wb__item">
+            <a href="contact-wb.html" class="mobile-navigation-list-wb__link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <header class="header-wb">
+    <div class="header-wb__wrapper">
+      <div class="header-wb-nav">
+        <div class="header-wb-block">
+          <a href="index.html" class="accecible-logo-box-wb">
+            <img src="./images/home-page/logo-accessible.svg" alt="logo" class="accecible-logo-box-wb__logo" />
+          </a>
+          <div class="header-wb-socials-box">
+            <div class="header-wb-socials-box__icons">
+              <a href="https://instagram.com" class="header-wb-socials-box__link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19.536" height="18.097" viewBox="0 0 19.536 18.097">
+                  <path id="Контур_14959" data-name="Контур 14959"
+                    d="M213.436,66.1H202.742a4.265,4.265,0,0,1-4.421-4.113V52.113A4.265,4.265,0,0,1,202.742,48h10.694a4.265,4.265,0,0,1,4.421,4.113v9.871A4.265,4.265,0,0,1,213.436,66.1ZM202.742,49.851a2.4,2.4,0,0,0-2.468,2.262v9.871a2.4,2.4,0,0,0,2.468,2.262h10.694a2.4,2.4,0,0,0,2.468-2.262V52.113a2.4,2.4,0,0,0-2.468-2.262Zm5.347,11.927a4.644,4.644,0,1,1,5.038-4.627A4.839,4.839,0,0,1,208.089,61.778Zm0-7.506A2.99,2.99,0,0,0,205,57.151a3.092,3.092,0,0,0,6.17,0A2.926,2.926,0,0,0,208.089,54.272Zm5.244-2.982a1.188,1.188,0,0,0-1.234,1.234,1.327,1.327,0,0,0,1.234,1.234,1.188,1.188,0,0,0,1.234-1.234A1.135,1.135,0,0,0,213.333,51.29Z"
+                    transform="translate(-198.321 -48)" fill="#3a8980" />
+                </svg>
+              </a>
+              <a href="https://facebook.com" class="header-wb-socials-box__link" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="9.974" height="17.686" viewBox="0 0 9.974 17.686">
+                  <path id="Контур_14960" data-name="Контур 14960"
+                    d="M247.481,51.393h1.954V48.514c-.309,0-.617-.1-1.028-.1h-1.748a4.418,4.418,0,0,0-2.571.72,3.585,3.585,0,0,0-1.542,2.365,5,5,0,0,0-.1,1.234v2.159h-2.982v3.188h2.982V66.1h3.6V58.18h2.982c.1-1.029.308-2.16.411-3.188h-3.393V52.73C246.042,51.7,246.659,51.393,247.481,51.393Z"
+                    transform="translate(-239.461 -48.411)" fill="#3a8980" fill-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+            <a href="#" class="header-wb-socials-box__link" target="_blank">
+              Newsletter
+            </a>
+          </div>
+        </div>
+        <div class="header-wb-nav-block">
+          <button class="burger-button-wb">
+            <img src="./images/home-page-wb/burger-button-wb.svg" alt="mobile menu button"
+              class="burger-button-wb__image" />
+          </button>
+          <nav class="navigation-wb">
+            <ul class="navigation-list-wb">
+              <li class="navigation-list-wb__item">
+                <a href="main-wb.html" class="navigation-list-wb__link" data-value="index">
+                  Home/Notre Biosphère
+                </a>
+                <ul class="navigation-dropdown-wb navigation-dropdown-wb--1">
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#about" class="navigation-dropdown-wb__link navigation-dropdown-wb__link--active">
+                      À propos
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#territory" class="navigation-dropdown-wb__link">
+                      Le territoire d’apprentissage
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#geography" class="navigation-dropdown-wb__link">
+                      La géographie
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#goals" class="navigation-dropdown-wb__link">
+                      Les objectifs
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#players" class="navigation-dropdown-wb__link">
+                      Les acteurs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="pro-sud-wb.html" class="navigation-list-wb__link" data-value="pro-sud">
+                  Pro-sud
+                </a>
+                <ul class="navigation-dropdown-wb navigation-dropdown-wb--2">
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#regionalDevelopment" class="navigation-dropdown-wb__link">
+                      Développement régional
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#officeCommittee" class="navigation-dropdown-wb__link">
+                      Le bureau & comité de pro-sud
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#proSudTeam" class="navigation-dropdown-wb__link">
+                      L’équipe pro-sud
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown-wb__item">
+                    <a href="#southRegionPlan" class="navigation-dropdown-wb__link">
+                      Plan directeur régional sud
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="agenda-wb.html" class="navigation-list-wb__link navigation-list-wb__link--active" data-value="agenda">
+                  Agenda
+                </a>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="projects-wb.html" class="navigation-list-wb__link"
+                  data-value="projects">
+                  Projects
+                </a>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="resources-wb.html" class="navigation-list-wb__link" data-value="resources">
+                  Ressources
+                </a>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="our-region.html" class="navigation-list-wb__link" data-value="our-region">
+                  Gallery
+                </a>
+              </li>
+              <li class="navigation-list-wb__item">
+                <a href="contact-wb.html" class="navigation-list-wb__link" data-value="contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-language-block-wb">
+            <button class="header-language-block-wb__button header-language-block-wb__button--active">
+              Fr
+            </button>
+            <button class="header-language-block-wb__button">De</button>
+            <button class="header-language-block-wb__button">En</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="agenda-details-wb">
+      <div class="wb-container">
+        <div class="agenda-details-wb__wrapper">
+          <a href="agenda-wb.html" class="agenda-details-wb__go-back-link">
+            <img src="./images/agenda-wb/go-back-arrow-black.svg" alt="arrow"
+              class="agenda-details-wb__go-back-link-image">
+          </a>
+          <div class="agenda-details-main-picture-wb">
+            <img src="./images/agenda-wb/agenda-1-big-black.jpg" alt="image"
+              class="agenda-details-main-picture-wb__image">
+          </div>
+          <div class="agenda-details-title-block-wb">
+            <h5 class="agenda-details-title-block-wb__subtitle">
+              Film & photographie , nature
+            </h5>
+            <h1 class="agenda-details-title-block-wb__title">
+              Photography workshop - mullerthal
+              <span class="agenda-details-title-block-wb__line-break">Luxembourg's little Switzerland</span>
+            </h1>
+            <h5 class="agenda-details-title-block-wb__subtitle">
+              with Christophe Van Biesen and Alfonso Salgueiro Lora
+            </h5>
+          </div>
+          <div class="agenda-details-block-wb">
+            <div class="agenda-details-block-item-wb">
+              <h4 class="agenda-details-block-item-wb__title">
+                Date(s)
+              </h4>
+              <div class="agenda-details-block-item-wb__date-time-box">
+                <span class="agenda-details-block-item-wb__date">
+                  28/06/2020
+                </span>
+                <span class="agenda-details-block-item-wb__time">
+                  06:00 - 12:00
+                </span>
+              </div>
+              <p class="agenda-details-block-item-wb__text">
+                Cours de photographie de paysage dans la belle région du Mullerthal au Grand-Duché du Luxembourg.
+              </p>
+              <p class="agenda-details-block-item-wb__text">
+                Rejoignez les photographes professionnels Christophe Van Biesen et Alfonso Salgueiro Lora pour explorer
+                le fantastique Mullerthal avec ses cascades picturesques, ces formations rocheuses impressionantes et
+                ses forêts verdoyantes.
+              </p>
+              <p class="agenda-details-block-item-wb__text">
+                Ce workshop s'adresse à tous les niveaux de photographe qui souhaitent améliorer leurs photos. Des
+                photographes débutants qui souhaitent apprendre les bases de la photographie, en passant par les
+                photographes intermédiaires qui souhaitent améliorer leur technique, jusqu'aux photographes expérimentés
+                qui sont experts dans leur domaine et souhaitent découvrir des endroits uniques et trouver de nouvelles
+                sources d'inspiration. Le but de ce cours est de passer un bon moment ensemble et d'apprendre des
+                nouvelles techniques ainsi que de vous faire découvrir des nouveaux endroits qui vous permettront d'être
+                inspirés et motivés pour capturer des nouvelles photos de paysages.
+              </p>
+            </div>
+            <div class="agenda-details-block-item-wb">
+              <div class="agenda-details-block-item-box-wb">
+                <h4 class="agenda-details-block-item-box-wb__title">
+                  Lieu
+                </h4>
+                <a href="https://goo.gl/maps/pZh4fiQf1A6re2jA9" target="_blank"
+                  class="agenda-details-block-item-box-wb__address">
+                  <span class="genda-details-block-item-box__location">
+                    Parking Schiessentümpel Muellerthall
+                  </span>
+                  <span class="agenda-details-block-item-box-wb__city">
+                    Mullerthal
+                  </span>
+                  <span class="agenda-details-block-item-box-wb__zip">
+                    6245 Mullerthal
+                  </span>
+                </a>
+              </div>
+              <div class="agenda-details-block-item-box-wb">
+                <h4 class="agenda-details-block-item-box-wb__title">
+                  Prix
+                </h4>
+                <p class="agenda-details-block-item-box-wb__price">
+                  150.00 €
+                </p>
+              </div>
+              <div class="agenda-details-block-item-box-wb">
+                <h4 class="agenda-details-block-item-box-wb__title">
+                  Information de contact pour cet événement
+                </h4>
+                <p class="agenda-details-block-item-box-wb__contacts">
+                  <span class="agenda-details-block-item-box-wb__contacts-item">
+                    Téléphone:
+                  </span>
+                  <a href="tel:00352691136601" class="agenda-details-block-item-box-wb__contacts-link">
+                    00352691136601
+                  </a>
+                </p>
+                <p class="agenda-details-block-item-box-wb__contacts">
+                  <span class="agenda-details-block-item-box-wb__contacts-item">
+                    E-mail:
+                  </span>
+                  <a href="mailto:photo@christophevanbiesen.com"
+                    class="agenda-details-block-item-box-wb__contacts-link">
+                    photo@christophevanbiesen.com
+                  </a>
+                </p>
+                <p class="agenda-details-block-item-box-wb__contacts">
+                  <span class="agenda-details-block-item-box-wb__contacts-item">
+                    Internet:
+                  </span>
+                  <a href="https://christophevanbiesen.com" class="agenda-details-block-item-box-wb__contacts-link"
+                    target="_blank">
+                    https://christophevanbiesen.com
+                  </a>
+                </p>
+              </div>
+              <div class="agenda-details-block-item-box-wb">
+                <h4 class="agenda-details-block-item-box-wb__title">
+                  Organisateur
+                </h4>
+                <p class="agenda-details-block-item-box-wb__organisator-name">
+                  Christophe Van Biesen
+                </p>
+              </div>
+              <div class="agenda-details-block-item-box-wb">
+                <h4 class="agenda-details-block-item-box-wb__title">
+                  Partager
+                </h4>
+                <div class="agenda-details-block-socials-box-wb">
+                  <a href="https://facebook.com" class="agenda-details-block-socials-box-wb__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16.534" height="30" viewBox="0 0 16.534 30">
+                      <path id="Контур_16279" data-name="Контур 16279"
+                        d="M5499.541,4912.266h3.409v-4.943a5.231,5.231,0,0,1-1.705-.171h-2.9a8.257,8.257,0,0,0-4.432,1.193,6.434,6.434,0,0,0-2.387,4.091,8.328,8.328,0,0,0-.17,2.046v3.579h-4.943v5.455h4.943v13.636h5.795v-13.636h4.944c.17-1.705.511-3.58.681-5.455h-5.795v-3.92C5497.154,4912.777,5498.007,4912.266,5499.541,4912.266Z"
+                        transform="translate(-5486.416 -4907.152)" fill="000" fill-rule="evenodd" />
+                    </svg>
+                  </a>
+                  <a href="https://instagram.com" class="agenda-details-block-socials-box-wb__link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="31.072" height="30" viewBox="0 0 31.072 30">
+                      <path id="Контур_16280" data-name="Контур 16280"
+                        d="M5546,4937.152h-17.041a6.94,6.94,0,0,1-7.1-6.745V4913.9a6.94,6.94,0,0,1,7.1-6.746H5546a6.783,6.783,0,0,1,6.923,6.746v16.331A6.715,6.715,0,0,1,5546,4937.152Zm-17.041-26.982a4.077,4.077,0,0,0-4.083,3.728v16.331a3.84,3.84,0,0,0,4.083,3.728H5546a4.076,4.076,0,0,0,4.083-3.728V4913.9a3.84,3.84,0,0,0-4.083-3.728Zm8.521,19.7a7.807,7.807,0,0,1-7.989-7.811,8.16,8.16,0,0,1,7.989-7.81,7.917,7.917,0,0,1,7.988,7.81A7.806,7.806,0,0,1,5537.48,4929.874Zm0-12.426a4.675,4.675,0,0,0-4.971,4.615,4.984,4.984,0,1,0,4.971-4.615Zm8.343-4.793a1.953,1.953,0,1,0,1.952,1.953A1.775,1.775,0,0,0,5545.823,4912.655Z"
+                        transform="translate(-5521.858 -4907.152)" fill="#000" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="agenda-details-block-item-wb">
+              <h4 class="agenda-details-block-item-wb__title">
+                Média
+              </h4>
+              <div class="agenda-details-block-video-wb">
+                <iframe src="https://www.youtube.com/embed/b2omafEq1bw" frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-wb">
+    <div class="wb-footer-container">
+      <div class="footer-wb__wrapper">
+        <div class="footer-block-wb">
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/minett biosphere white logo.svg" alt="logo" class="footer-box-wb__image" /> -->
+            <img src="./images/home-page-wb/minett logo white.svg" alt="logo" class="footer-box-wb__image" />
+          </a>
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/UNESCO white logo.svg" alt="logo" class="footer-box-wb__image" /> -->
+            <img src="./images/home-page-wb/Unesco-white-logo.svg" alt="logo" class="footer-box-wb__image" />
+          </a>
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/pro sud white logo.svg" alt="logo" class="footer-box-wb__image" /> -->
+            <img src="./images/home-page-wb/prosud-white-logo.svg" alt="logo" class="footer-box-wb__image" />
+          </a>
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/luxembourg white logo.svg" alt="logo" class="footer-box-wb__image" /> -->
+            <img src="./images/home-page-wb/luxemburg-white-logo.svg" alt="logo" class="footer-box-wb__image" />
+          </a>
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/conditions.svg" alt="logo" class="footer-box-wb__image" /> -->
+            <img src="./images/home-page-wb/conditions-white-logo.svg" alt="logo" class="footer-box-wb__image" />
+          </a>
+        </div>
+        <div class="footer-block-wb">
+          <a href="#" target="_blank" class="footer-box-wb">
+            <!-- <img src="./images/home-page/grenge web logo.svg" alt="logo" class="footer-box-wb__image"> -->
+            <img src="./images/home-page-wb/grenge-white-logo.svg" alt="logo" class="footer-box-wb__image">
+          </a>
+          <a href="#" class="footer-box-wb">
+            <!-- <img src="./images/home-page/site web eco responsable.svg" alt="logo" class="footer-box-wb__image"> -->
+            <img src="./images/home-page-wb/responsable-white-logo.svg" alt="logo" class="footer-box-wb__image">
+          </a>
+          <a href="#" target="_blank" class="footer-box-wb">
+            <!-- <img src="./images/home-page/by moloko.svg" alt="logo" class="footer-box-wb__image"> -->
+            <img src="./images/home-page-wb/by-moloko-white-logo.svg" alt="logo" class="footer-box-wb__image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script type="text/javascript" src="scripts/animations.js"></script>
+  <script type="text/javascript" src="scripts/selects.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

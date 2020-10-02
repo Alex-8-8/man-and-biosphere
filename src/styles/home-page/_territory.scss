@@ -1,0 +1,88 @@
+.territory {
+  margin-bottom: 138px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 145px;
+  }
+
+  &__title-wrapper {
+    margin-bottom: 75px;
+
+    @media (max-width: 950px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.territory-fact {
+  margin-bottom: 90px;
+
+  @media (max-width: 950px) {
+    margin-bottom: 30px;
+  }
+
+  &--desktop {
+    @media (max-width: 950px) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: 950px) {
+      display: block;
+    }
+  }
+}
+
+.territory-block {
+  position: relative;
+  display: flex;
+
+  @media (max-width: 950px) {
+    flex-direction: column;
+  }
+}
+
+.territory-block-picture {
+  position: absolute;
+  top: -30px;
+  left: -360px;
+  height: 548px;
+  z-index: -1;
+
+  @media (max-width: 1350px) {
+    position: static;
+    width: 52%;
+  }
+
+  @media (max-width: 950px) {
+    height: auto;
+    width: 100%;
+    margin: 0 auto 22.5px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.territory-block-content {
+  width: 48%;
+  margin-left: auto;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 35px;
+
+    @media (max-width: 950px) {
+      margin-bottom: 28px;
+    }
+  }
+}

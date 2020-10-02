@@ -1,0 +1,16 @@
+.projects-picture-section-wb {
+  margin-bottom: 125px;
+
+  @media (max-width: 900px) {
+    margin-top: 61.5px;
+    margin-bottom: 92px;
+  }
+}
+
+.projects-picture-block-wb {
+  height: 500px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}

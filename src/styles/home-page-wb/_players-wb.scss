@@ -1,0 +1,238 @@
+.players-wb {
+  &__title-wrapper {
+    margin-bottom: 147px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.players-block-wb {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    width: 48.2%;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+
+  &__item:last-child {
+    display: flex;
+    flex-direction: column;
+
+    p:last-child {
+      margin-top: auto;
+    }
+  }
+
+  p {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 50px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 34px;
+    }
+  }
+}
+
+.players-block-wb:nth-child(2) {
+  margin-bottom: 132px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 82.5px;
+  }
+
+  .players-fact-wb {
+    margin-bottom: 64px;
+
+    @media (max-width: 900px) {
+      margin-bottom: 34px;
+    }
+  }
+
+  .players-block-wb__picture {
+    position: absolute;
+    top: -83px;
+    right: 0;
+    height: 75%;
+    width: 100%;
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+}
+
+.players-block-wb:nth-child(3) {
+  margin-bottom: 100px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 34px;
+  }
+
+  .players-fact-wb {
+    margin-bottom: 53px;
+    width: 100%;
+
+    p,
+    h4 {
+      display: inline-block;
+    }
+
+    @media (max-width: 900px) {
+      margin-bottom: 63px;
+    }
+  }
+
+  .players-framed-block-wb {
+    width: 47.2%;
+
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+  }
+}
+
+.players-block-wb:nth-child(4) {
+  font-size: 26px;
+  line-height: 35px;
+
+  @media (max-width: 1100px) {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 900px) {
+    line-height: 31px;
+    margin-bottom: 115px;
+  }
+
+  .players-block-wb__item:first-child {
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 900px) {
+      margin-bottom: 91px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 22px;
+
+      @media (max-width: 900px) {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        font-size: 16px;
+
+        @media (max-width: 900px) {
+          font-size: 24px;
+        }
+
+        span {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  h5 {
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 74px;
+    font-weight: 900;
+
+    @media (max-width: 900px) {
+      line-height: 31px;
+    }
+  }
+
+  h6 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 900;
+
+    @media (max-width: 900px) {
+      margin-bottom: 25px;
+      line-height: 18px;
+    }
+  }
+
+  li {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+
+    @media (max-width: 900px) {
+      line-height: 31px;
+    }
+  }
+
+  li:not(:last-child) {
+    @media (max-width: 900px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .players-block-wb__picture {
+    position: relative;
+    margin-top: -20px;
+    height: 50vw;
+    bottom: -4px;
+    z-index: -1;
+
+    @media (max-width: 1100px) {
+      margin-top: auto;
+      bottom: -20px;
+    }
+
+    @media (max-width: 900px) {
+      display: none;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+}
+
+.players-fact-wb {
+  // width: 70%;
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+
+  h4,
+  p {
+    font-size: 36px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+}

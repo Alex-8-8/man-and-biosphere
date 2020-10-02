@@ -1,0 +1,122 @@
+.south-region-plan {
+
+  &__title-wrapper {
+    margin-bottom: 60px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.south-region-plan-picture-block {
+  margin-bottom: 175px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 27px;
+  }
+}
+
+.south-region-plan-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 165px;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+
+  >h4 {
+    width: 100%;
+    margin-bottom: 40px;
+    color: $red-color;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+  }
+}
+
+.south-region-plan-block-item {
+  width: 48%;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  p {
+    @media (max-width: 800px) {
+      font-weight: 600;
+    }
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 35px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  h5 {
+    width: 90%;
+    margin-bottom: 25px;
+    color: $red-color;
+    font-size: 18px;
+
+    @media (max-width: 800px) {
+      color: #000;
+    }
+  }
+}
+
+.south-region-plan-block-item:not(:last-child) {
+  @media (max-width: 800px) {
+    margin-bottom: 75px;
+  }
+}
+
+.south-region-plan-block-item:last-child {
+  position: absolute;
+  bottom: -6px;
+  left: -145px;
+  z-index: -1;
+
+  @media (max-width: 1400px) {
+    left: 0;
+  }
+
+  @media (max-width: 800px) {
+    position: relative;
+    left: auto;
+    top: 6px;
+    display: flex;
+  }
+
+  img {
+    @media (max-width: 1400px) {
+      width: 100%;
+    }
+
+    @media (max-width: 800px) {
+      height: 100%;
+      width: 70%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Man and biosphere</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="styles/main.scss">
+</head>
+
+<body>
+  <div class="mobile-menu">
+    <div class="mobile-menu__wrapper">
+      <button class="mobile-menu__button">
+        <img src="./images/home-page/cross.png" alt="cross" class="mobile-menu__cross">
+      </button>
+      <nav class="mobile-navigation">
+        <ul class="mobile-navigation-list">
+          <li class="mobile-navigation-list__item">
+            <a href="index.html" class="mobile-navigation-list__link">
+              Home/Notre Biosphère
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="pro-sud.html" class="mobile-navigation-list__link">
+              Pro-sud
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="agenda.html" class="mobile-navigation-list__link mobile-navigation-list__link--active">
+              Agenda
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="projects.html" class="mobile-navigation-list__link">
+              Projects
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="resources.html" class="mobile-navigation-list__link">
+              Ressources
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="our-region.html" class="mobile-navigation-list__link">
+              Découvrir Notre Région
+            </a>
+          </li>
+          <li class="mobile-navigation-list__item">
+            <a href="contact.html" class="mobile-navigation-list__link">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="header-nav">
+        <div class="header-block">
+          <a href="main-wb.html" class="accecible-logo-box">
+            <img src="./images/home-page/logo-accessible.svg" alt="logo" class="accecible-logo-box__logo">
+          </a>
+          <div class="header-socials-box">
+            <a href="https://instagram.com" class="header-socials-box__link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="19.536" height="18.097" viewBox="0 0 19.536 18.097">
+                <path id="Контур_14959" data-name="Контур 14959"
+                  d="M213.436,66.1H202.742a4.265,4.265,0,0,1-4.421-4.113V52.113A4.265,4.265,0,0,1,202.742,48h10.694a4.265,4.265,0,0,1,4.421,4.113v9.871A4.265,4.265,0,0,1,213.436,66.1ZM202.742,49.851a2.4,2.4,0,0,0-2.468,2.262v9.871a2.4,2.4,0,0,0,2.468,2.262h10.694a2.4,2.4,0,0,0,2.468-2.262V52.113a2.4,2.4,0,0,0-2.468-2.262Zm5.347,11.927a4.644,4.644,0,1,1,5.038-4.627A4.839,4.839,0,0,1,208.089,61.778Zm0-7.506A2.99,2.99,0,0,0,205,57.151a3.092,3.092,0,0,0,6.17,0A2.926,2.926,0,0,0,208.089,54.272Zm5.244-2.982a1.188,1.188,0,0,0-1.234,1.234,1.327,1.327,0,0,0,1.234,1.234,1.188,1.188,0,0,0,1.234-1.234A1.135,1.135,0,0,0,213.333,51.29Z"
+                  transform="translate(-198.321 -48)" fill="#3a8980" />
+              </svg>
+            </a>
+            <a href="https://facebook.com" class="header-socials-box__link" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="9.974" height="17.686" viewBox="0 0 9.974 17.686">
+                <path id="Контур_14960" data-name="Контур 14960"
+                  d="M247.481,51.393h1.954V48.514c-.309,0-.617-.1-1.028-.1h-1.748a4.418,4.418,0,0,0-2.571.72,3.585,3.585,0,0,0-1.542,2.365,5,5,0,0,0-.1,1.234v2.159h-2.982v3.188h2.982V66.1h3.6V58.18h2.982c.1-1.029.308-2.16.411-3.188h-3.393V52.73C246.042,51.7,246.659,51.393,247.481,51.393Z"
+                  transform="translate(-239.461 -48.411)" fill="#3a8980" fill-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="header-socials-box__link" target="_blank">
+              Newsletter
+            </a>
+          </div>
+        </div>
+        <div class="header-nav-block">
+          <button class="burger-button">
+            <img src="./images/home-page/burger-button.svg" alt="mobile menu button" class="burger-button__image">
+          </button>
+          <nav class="navigation">
+            <ul class="navigation-list">
+              <li class="navigation-list__item">
+                <a href="index.html" class="navigation-list__link">
+                  Home/Notre Biosphère
+                </a>
+                <ul class="navigation-dropdown navigation-dropdown--1">
+                  <li class="navigation-dropdown__item">
+                    <a href="#about" class="navigation-dropdown__link">
+                      À propos
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#territory" class="navigation-dropdown__link">
+                      Le territoire d’apprentissage
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#geography" class="navigation-dropdown__link">
+                      La géographie
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#goals" class="navigation-dropdown__link">
+                      Les objectifs
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#players" class="navigation-dropdown__link">
+                      Les acteurs
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation-list__item">
+                <a href="pro-sud.html" class="navigation-list__link">
+                  Pro-sud
+                </a>
+                <ul class="navigation-dropdown navigation-dropdown--2">
+                  <li class="navigation-dropdown__item">
+                    <a href="#regionalDevelopment" class="navigation-dropdown__link">
+                      Développement régional
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#officeCommittee" class="navigation-dropdown__link">
+                      Le bureau & comité de pro-sud
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#proSudTeam" class="navigation-dropdown__link">
+                      L’équipe pro-sud
+                    </a>
+                  </li>
+                  <li class="navigation-dropdown__item">
+                    <a href="#southRegionPlan" class="navigation-dropdown__link">
+                      Plan directeur régional sud
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="navigation-list__item">
+                <a href="agenda.html" class="navigation-list__link navigation-list__link--active">
+                  Agenda
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="projects.html" class="navigation-list__link">
+                  Projects
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="resources.html" class="navigation-list__link">
+                  Ressources
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="our-region.html" class="navigation-list__link">
+                  Découvrir Notre Région
+                </a>
+              </li>
+              <li class="navigation-list__item">
+                <a href="contact.html" class="navigation-list__link">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-language-block">
+            <button class="header-language-block__button header-language-block__button--active">
+              Fr
+            </button>
+            <button class="header-language-block__button">
+              De
+            </button>
+            <button class="header-language-block__button">
+              En
+            </button>
+          </div>
+        </div>
+        <div class="header-logo-block">
+          <a class="header-logo-block__link header-logo-block__link--desktop">
+            <img src="./images/home-page/minett-biosphere-logo.svg" alt="logo" class="header-logo-block__image">
+          </a>
+          <a class="header-logo-block__link header-logo-block__link--desktop">
+            <img src="./images/home-page//pro-sud-logo.svg" alt="logo" class="header-logo-block__image">
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="filters">
+      <div class="large-container">
+        <div class="filters__wrapper">
+          <form action="" class="filters-form">
+            <div class="filters-form-item">
+              <label for="date" class="filters-form-item__label">
+                Quand
+              </label>
+              <input type="date" id="date" class="filters-form-item__input">
+            </div>
+            <div class="filters-form-item">
+              <label for="filterCategory" class="filters-form-item__label">
+                Catégories
+              </label>
+              <select name="filterCategory" id="filterCategory" class="filters-form-item__select">
+                <option selected="selected" disabled>Séléctioner</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="filters-form-item">
+              <label for="targetAudience" class="filters-form-item__label">
+                Public cible
+              </label>
+              <select id="targetAudience" class="filters-form-item__select">
+                <option selected="selected" disabled>Séléctioner</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <div class="filters-form-item">
+              <button type="button" class="filters-form-item__button">
+                Supprimer
+                <svg xmlns="http://www.w3.org/2000/svg" width="9.723" height="9.723" viewBox="0 0 9.723 9.723"
+                  class="filters-form-item__red-cross">
+                  <g id="Сгруппировать_30260" data-name="Сгруппировать 30260" transform="translate(-6035.805 -204.639)">
+                    <line id="Линия_122939" data-name="Линия 122939" x2="9.192" y2="9.192"
+                      transform="translate(6036.07 204.904)" fill="none" stroke="#9d1915" stroke-miterlimit="10"
+                      stroke-width="0.75" />
+                    <line id="Линия_122940" data-name="Линия 122940" x1="9.192" y2="9.192"
+                      transform="translate(6036.07 204.904)" fill="none" stroke="#9d1915" stroke-miterlimit="10"
+                      stroke-width="0.75" />
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="month month--dark-green">
+      <div class="large-container">
+        <div class="month__wrapper">
+          <div class="month__title-wrapper title-block title-block--dark-green">
+            <img src="./images/agenda/darkgreen-left-quote.svg" alt="quote"
+              class="about__quote about__quote--left title-block__quote title-block__quote--left">
+            <img src="./images/agenda/darkgreen-right-quote.svg" alt="quote"
+              class="about__quote about__quote--right title-block__quote title-block__quote--right">
+            <h2 class="month__title title-block__title">
+              <span class="title-block__additional-text">
+                2020
+              </span>
+              Juin
+            </h2>
+          </div>
+          <div class="month-news-grid">
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-1.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Photography workshop
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    28/06/2020
+                  </span>
+                  <span class="month-news-item__tiem">
+                    06:00-12:00
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  Parking Schiessentümpel Muellerthall Mullertha
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-2.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Schatzkammer reloaded
+                </button>
+                <p class="month-news-item__date-time-box">
+                  Permanent
+                </p>
+                <p class="month-news-item__place">
+                  25, rue Münster - 2160 Luxembourg Luxembourg
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-3.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Wasserbillig (l) tour du port& de la moselle
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    28/06/2020
+                  </span>
+                  <span class="month-news-item__tiem">
+                    06:00-12:00
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  Parking Schiessentümpel Muellerthall Mullertha
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item month-news-item--hidden">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-4.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Konscht am besch
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    15/06/2020 - 31/10/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  1 esplanade de la Moselle 6637 Wasserbillig Luxembourg
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item month-news-item--hidden">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-5.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Yoga et relaxation pour enfants
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    11/01/2020 - 27/06/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  53 rue Grande-DuchesseCharlotte 7520 Mersch - Luxembourg
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item month-news-item--hidden">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-6.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Capoeira
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    16/09/2019 - 30/07/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  53 rue Grande-DuchesseCharlotte 7520 Mersch - Luxembourg
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="month month--light-green month--hidden">
+      <div class="large-container">
+        <div class="month__wrapper">
+          <div class="month__title-wrapper title-block title-block--light-green">
+            <img src="./images/home-page/left-quote.svg" alt="quote"
+              class="about__quote about__quote--left title-block__quote title-block__quote--left">
+            <img src="./images/home-page/right-quote.svg" alt="quote"
+              class="about__quote about__quote--right title-block__quote title-block__quote--right">
+            <h2 class="month__title title-block__title">
+              <span class="title-block__additional-text">
+                2020
+              </span>
+              Juillet
+            </h2>
+          </div>
+          <div class="month-news-grid">
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-1.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Photography workshop
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    28/06/2020
+                  </span>
+                  <span class="month-news-item__tiem">
+                    06:00-12:00
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  Parking Schiessentümpel Muellerthall Mullertha
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-2.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Schatzkammer reloaded
+                </button>
+                <p class="month-news-item__date-time-box">
+                  Permanent
+                </p>
+                <p class="month-news-item__place">
+                  25, rue Münster - 2160 Luxembourg Luxembourg
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-3.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Photography workshop
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    28/06/2020
+                  </span>
+                  <span class="month-news-item__tiem">
+                    06:00-12:00
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  Parking Schiessentümpel Muellerthall Mullertha
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-4.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Wasserbillig (l) tour du port & de la moselle
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    25/06/2020 - 31/10/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  Parking Schiessentümpel Muellerthall Mullerthal
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-5.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Yoga et relaxation pour enfants
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    11/01/2020 - 27/06/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  53 rue Grande-DuchesseCharlotte 7520 Mersch - Luxembourg
+                </p>
+              </div>
+            </a>
+            <a href="agenda-details.html" class="month-news-item">
+              <div class="month-news-item__image-wrapper">
+                <img src="./images/agenda/month-news-image-6.svg" alt="image" class="month-news-item__image">
+              </div>
+              <div class="month-news-item__content">
+                <button class="month-news-item__button">
+                  Capoeira
+                </button>
+                <p class="month-news-item__date-time-box">
+                  <span class="month-news-item__date">
+                    16/09/2019 - 30/07/2020
+                  </span>
+                </p>
+                <p class="month-news-item__place">
+                  53 rue Grande-DuchesseCharlotte 7520 Mersch - Luxembourg
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="month month--dark-green month--hidden">
+      <div class="large-container">
+        <div class="month__wrapper">
+          <div class="month__title-wrapper title-block title-block--dark-green">
+            <img src="./images/agenda/darkgreen-left-quote.svg" alt="quote"
+              class="about__quote about__quote--left title-block__quote title-block__quote--left">
+            <img src="./images/agenda/darkgreen-right-quote.svg" alt="quote"
+              class="about__quote about__quote--right title-block__quote title-block__quote--right">
+            <h2 class="month__title title-block__title">
+              <span class="title-block__additional-text">
+                2020
+              </span>
+              Aout
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="show-more-block">
+      <div class="large-container">
+        <div class="show-more-block__wrapper">
+          <button class="show-more-block__button" id="agendaShowMore">
+            Voir plus
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer-block">
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/grenge web logo.svg" alt="logo" class="footer-box__image">
+        </a>
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/site web eco responsable.svg" alt="logo" class="footer-box__image">
+        </a>
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/by moloko.svg" alt="logo" class="footer-box__image">
+        </a>
+      </div>
+      <div class="footer-block">
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/minett biosphere white logo.svg" alt="logo" class="footer-box__image">
+        </a>
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/UNESCO white logo.svg" alt="logo" class="footer-box__image">
+        </a>
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/pro sud white logo.svg" alt="logo" class="footer-box__image">
+        </a>
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/luxembourg white logo.svg" alt="logo" class="footer-box__image">
+        </a>
+      </div>
+      <div class="footer-block">
+        <a href="#" class="footer-box">
+          <img src="./images/home-page/conditions.svg" alt="logo" class="footer-box__image">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script type="text/javascript" src="scripts/animations.js"></script>
+  <script type="text/javascript" src="scripts/selects.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

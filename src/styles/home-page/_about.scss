@@ -1,0 +1,165 @@
+.about {
+  margin-bottom: 80px;
+  @media (max-width: 500px) {
+    margin-bottom: 140px;
+  }
+
+  &__title-wrapper {
+    margin-bottom: 80px;
+
+    @media (max-width: 500px) {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about-fact {
+  margin-bottom: 90px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 50px;
+  }
+}
+
+.about-block {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  // height: 730px;
+}
+
+.about-block:not(:last-child) {
+  margin-bottom: 150px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 64px;
+  }
+}
+
+.about-block-map {
+  position: absolute;
+  top: 0;
+  left: -115px;
+  height: 100%;
+  width: 60%;
+
+  @media (max-width: 1350px) {
+    position: static;
+    width: 50%;
+  }
+
+  @media (max-width: 800px) {
+    width: 80%;
+    margin: 0 auto 81px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.about-block-list {
+  width: 47%;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-bottom: 305px;
+
+  @media (max-width: 1350px) {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin: 0;
+  }
+
+  li {
+
+    span {
+      color: $red-color;
+      font-size: 21px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.about-block-content {
+  width: 48%;
+  padding-bottom: 70px;
+
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+
+  p {
+    margin-bottom: 90px;
+
+    @media (max-width: 800px) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.about-block-picture {
+  position: absolute;
+  top: -5px;
+  right: 0;
+  z-index: -1;
+  @media (max-width: 1350px) {
+    position: static;
+    width: 52%;
+  }
+
+  @media(max-width: 800px) {
+    position: static;
+    width: 80%;
+    margin: 0 auto 42px;
+  }
+
+  @media(max-width: 500px) {
+    width: 100%;
+  }
+
+  img {
+    max-height: 550px;
+    @media (max-width: 1350px) {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.about-block-additional-info {
+  &--desktop {
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media (max-width: 800px) {
+      display: block;
+    }
+  }
+}

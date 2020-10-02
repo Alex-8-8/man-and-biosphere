@@ -1,0 +1,19 @@
+.pro-sud-picture-section {
+  position: relative;
+  margin-bottom: 60px;
+
+  @media (max-width: 500px) {
+    margin-bottom: 45px;
+  }
+
+  &__title-wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 75px;
+
+    @media (max-width: 500px) {
+      bottom: 22px;
+    }
+  }
+}

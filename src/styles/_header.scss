@@ -1,0 +1,274 @@
+@import "utils";
+
+.header {
+  width: 100%;
+  color: $dark-green-color;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", cursive;
+
+  @media (max-width: 1400px) {
+    // padding: 17px 18px 0;
+  }
+}
+
+.header-nav {
+  height: 113px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $dark-green-color;
+
+  @media (max-width: 1400px) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: auto;
+    padding: 17px 18px 0;
+    border-bottom: 0;
+  }
+}
+
+.header-block {
+  position: relative;
+  height: 100%;
+  width: 470px;
+  display: flex;
+  align-items: center;
+  padding-left: 36px;
+  background: url("../images/home-page/header-decoration.svg");
+
+  &::before {
+    @media (max-width: 1400px) {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 1px;
+      width: 100vw;
+      background: $dark-green-color;
+    }
+  }
+
+  @media (max-width: 1750px) {
+    width: 18.5%;
+    justify-content: space-between;
+    padding: 0 22px;
+  }
+
+  @media (max-width: 1400px) {
+    width: 100%;
+    order: 1;
+    padding: 13.5px 0;
+    background: none;
+    // border-top: 1px solid $dark-green-color;
+  }
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
+}
+
+.header-nav-block {
+  display: flex;
+  margin-left: auto;
+  margin-right: 110px;
+
+  @media (max-width: 1600px) {
+    margin-right: 50px;
+  }
+
+  @media (max-width: 1400px) {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
+
+.accecible-logo-box {
+  height: 64px;
+  width: 64px;
+  margin-right: 98px;
+
+  @media (max-width: 1750px) {
+    margin-right: 0;
+  }
+
+  @media (max-width: 500px) {
+    order: 1;
+    height: 40px;
+    width: 40px;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    transition: 0.3s;
+  }
+
+  img:hover {
+    opacity: 0.7;
+  }
+}
+
+.header-socials-box {
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+
+  svg {
+    height: 18px;
+
+    path {
+      transition: 0.3s;
+    }
+  }
+
+  a {
+    transition: 0.3s;
+  }
+
+  a:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  a:last-child {
+    margin-left: auto;
+  }
+
+  a:hover path {
+    fill: $light-brown-color;
+  }
+
+  a:hover {
+    color: $light-brown-color;
+  }
+}
+
+.burger-button {
+  display: none;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
+}
+
+.navigation {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.navigation-list {
+  display: flex;
+  margin-right: 40px;
+
+  li {
+    position: relative;
+
+    ul {
+      display: none;
+      position: absolute;
+      top: 23px;
+      left: 50%;
+      // transform: translateX(50%);
+      background: #fff;
+      padding: 25px 10px 8px 8px;
+      z-index: 2;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 13px;
+        left: 0;
+        width: 1px;
+        height: calc(100% - 13px);
+        background: $dark-green-color;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 6.5px;
+      }
+
+      .navigation-dropdown__link--active {
+        color: $red-color;
+      }
+    }
+  }
+
+  li:hover ul {
+    display: block;
+  }
+
+  li:not(:last-child) {
+    margin-right: 35px;
+
+    @media (max-width: 1600px) {
+      margin-right: 20px;
+    }
+  }
+
+  a {
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    color: $light-brown-color;
+  }
+
+  a.navigation-list__link--active {
+    color: $red-color;
+  }
+
+}
+
+.header-language-block {
+  display: flex;
+
+  button {
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    color: $light-brown-color;
+  }
+
+  button.header-language-block__button--active {
+    color: $red-color;
+  }
+
+  button:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.header-logo-block {
+  display: flex;
+  align-items: center;
+  padding-right: 53px;
+
+  @media (max-width: 1600px) {
+    padding-right: 36px;
+  }
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
+
+  a {
+    height: 67px;
+  }
+
+  a:not(:last-child) {
+    margin-right: 40px;
+
+    @media (max-width: 1600px) {
+      margin-right: 20px;
+    }
+  }
+}

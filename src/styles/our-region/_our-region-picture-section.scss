@@ -1,0 +1,22 @@
+.our-region-picture-section {
+  position: relative;
+  margin-bottom: 150px;
+
+  @media (max-width: 800px) {
+    margin-bottom: 25.7px;
+  }
+
+  &__title-wrapper {
+    position: absolute;
+    top: 57.6px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (max-width: 500px) {
+      top: auto;
+      bottom: 40px;
+      padding: 30px 48.2px 0;
+      width: 80%;
+    }
+  }
+}

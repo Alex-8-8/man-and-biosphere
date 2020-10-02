@@ -1,0 +1,24 @@
+.resources-picture-section-wb {
+  margin-bottom: 125px;
+
+  @media (max-width: 900px) {
+    margin-top: 61.5px;
+    margin-bottom: 109px;
+  }
+}
+
+.resources-picture-block-wb {
+  height: 500px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  img {
+    object-position: -300px 0;
+
+    @media (max-width: 1300px) {
+      object-position: unset;
+    }
+  }
+}

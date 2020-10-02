@@ -1,0 +1,13 @@
+.pro-sud-picture-section-wb {
+  margin-bottom: 134px;
+
+  @media (max-width: 900px) {
+    margin-bottom: 123px;
+  }
+}
+
+.prosud-picture-block-wb {
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
