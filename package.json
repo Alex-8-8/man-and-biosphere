@@ -17,6 +17,7 @@
   "keywords": [],
   "author": "Mate Academy",
   "license": "GPL-3.0",
+  "homepage": "https://Alex-8-8/man-and-biosphere",
   "devDependencies": {
     "@linthtml/linthtml": "^0.3.2",
     "@mate-academy/eslint-config": "*",
